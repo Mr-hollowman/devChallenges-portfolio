@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.total-container{
+    margin: 0 auto;
+    min-width: 70%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3fr,auto);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "one one one"
+        "two three three"
+        "four three three"
+        "four five five"
+        "six six six"
+    ;
+}
+.profile{
+    grid-area: one;
+    display: flex;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.profile img{
+    max-width: 300px;
+}
+.profile-content{
+    margin-left: 20px;
+}
+.role{
+    margin-top: -10px;
+}
+.contact{
+    position: absolute;
+    top:25px;
+    right:20px;
+}
+.phone{
+    margin-top: 18px;
+}
+.skills{
+    padding: 30px;
+    grid-area: two;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.skills-html{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.blogs{
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    grid-area: three;
+}
+.blogs-1{
+    display: flex;
+    justify-content: space-between;
+}
+.img-container{
+    max-width: 300px;
+}
+.hobbies p{
+    max-width: 250px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.hobbies{
+    padding:20px;
+    grid-area: four;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.experience{
+    grid-area: five;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+.experience-content{
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+.experience img{
+    width: 200px;
+    margin-right: 50px;
+}
+.btn{
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+}
+.demo{
+    background: #2F80ED;
+}
+.code{
+    border: 1px solid #2F80ED;
+    color: #2F80ED;
+    background-color: #fff;
+}
+.notFound-page{
+    padding: 20px;
+    width: 250px;
+    /* height: 650px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button-container{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#myBtnContainer{
+    grid-area: six;
+    min-width: 70%;
+    margin: 0 auto;
+}
+
+
+
+/* ------------------ */
+.filterDiv {
+    /* float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px; */
+    display: none;
+    width: 320px;
+    margin-top: 70px;
+    margin-left: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container{
+    min-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+  .show {
+    display: flex;
+  }
+  
+  /* .container {
+    margin-top: 20px;
+    overflow: hidden;
+  } */
+  
+  /* Style the buttons */
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  a{
+    text-decoration: none;
+    padding: 10px;
+  }
+
+
+  @media (max-width:750px){
+    .profile img{
+        width: 200px;
+    }
+    .myname{
+        font-size: 13px ;
+    }
+    .phone{
+        margin-top: 5px;
+    }
+    .contact{
+        margin-top: -5px;
+    }
+    .profile p{
+        font-size: 12px;
+    }
+    .experience img{
+        width: 150px;
+    }
+  }
+  @media(max-width:500px){
+    .experience img{
+        width: 100px;
+    }
+    .filterDiv{
+        width: 250px;
+        margin-left: 35px;
+    }
+    .container{
+        width: 590px;
+        /* background-color: black; */
+
+        /* flex-wrap: nowrap; */
+        /* flex-direction: column; */
+    }
+  }
